@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elzero HTML And CSS Design 4 - Settings</title>
+    <!-- Open Sans Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../css/normalize-v8.0.1.css">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- [Sidebar]>> -->
+      <aside>
+        <h3>Nero</h3>
+        <ul>
+          <!-- Dashboard -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/index.html">
+              <i class="fa-fw fa-regular fa-chart-bar"></i>
+              <span class="ml-10px fs-14">Dashboard</span>
+            </a>
+          </li>
+          <!-- Settings -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/settings.html" class="active">
+              <i class="fa-fw fa-solid fa-gear"></i>
+              <span class="ml-10px fs-14">Settings</span>
+            </a>
+          </li>
+          <!-- Profile -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/profile.html">
+              <i class="fa-fw fa-regular fa-user"></i>
+              <span class="ml-10px fs-14">Profile</span>
+            </a>
+          </li>
+          <!-- Projects -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/projects.html">
+              <i class="fa-fw fa-solid fa-list-check"></i>
+              <span class="ml-10px fs-14">Projects</span>
+            </a>
+          </li>
+          <!-- Courses -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/courses.html">
+              <i class="fa-fw fa-solid fa-graduation-cap"></i>
+              <span class="ml-10px fs-14">Courses</span>
+            </a>
+          </li>
+          <!-- Friends -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/friends.html">
+              <i class="fa-fw fa-solid fa-user-group"></i>
+              <span class="ml-10px fs-14">Friends</span>
+            </a>
+          </li>
+          <!-- Files -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/files.html">
+              <i class="fa-fw fa-regular fa-file"></i>
+              <span class="ml-10px fs-14">Files</span>
+            </a>
+          </li>
+          <!-- Plans -->
+          <li>
+            <a href="/Elzero-HTML-And-CSS-Design-4/pages/plans.html">
+              <i class="fa-fw fa-regular fa-rectangle-list"></i>
+              <span class="ml-10px fs-14">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- <<[Sidebar] -->
+
+
+
+
+
+      <!-- [Content]>> -->
+      <div class="content">
+        <!-- [Header] -->
+        <header>
+          <div class="search">
+            <input type="search" name="search" placeholder="Type a Keyword" />
+          </div>
+          <div class="icons">
+            <i class="fa-regular fa-bell"></i>
+            <img src="../images/profile.jpg" alt="Profile Picture" />
+          </div>
+        </header>
+
+        <!-- [Main Content] -->
+        <main>
+          <h1>Settings</h1>
+          <div class="settings">
+            <!-- [Control] -->
+            <div class="widget control">
+              <h3>Site Control</h3>
+              <p>Control the website if there is maintenance</p>
+              <div class="site-state">
+                <div class="text">
+                  <span>Maintenance Mode</span>
+                  <p>Open/Close Website And Type The Reason</p>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="switch"></div>
+                </label>
+              </div>
+              <textarea placeholder="Maintenance Message"></textarea>
+            </div>
+
+            <!-- General Information -->
+            <div class="widget information">
+              <h3>General Info</h3>
+              <p>General Information About Your Account</p>
+              <form action="#">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="First Name" />
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" />
+                <label for="email">Email</label>
+                <input type="email" id="email" value="miqdad@gmail.com" disabled/>
+                <input type="submit" value="Change" />
+              </form>
+            </div>
+
+            <!-- Security Information -->
+            <div class="widget security">
+              <h3>Security Info</h3>
+              <p>Security Information About Your Account</p>
+              <!-- Field 1 -->
+              <div class="field">
+                <div class="text">
+                  <span>Password</span>
+                  <p>Last Change On 25/10/2023</p>
+                </div>
+                <a href="#" class="blue-button">Change</a>
+              </div>
+              <!-- Field 2 -->
+              <div class="field">
+                <div class="text">
+                  <span>Two-Factor Authentication</span>
+                  <p>Enable/Disable Authentication</p>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="switch"></div>
+                </label>
+              </div>
+              <!-- Field 3 -->
+              <div class="field devices">
+                <div class="text">
+                  <span>Devices</span>
+                  <p>Check The Login Devices List</p>
+                </div>
+                <a href="">Devices</a>
+              </div>
+            </div>
+
+            <!-- Social Networks -->
+            <div class="widget social">
+              <h3>Social Info</h3>
+              <p>Social Media Information</p>
+              <!-- X Twitter -->
+              <div class="network">
+                <i class="fa-brands fa-x-twitter"></i>
+                <input type="text" name="x-twitter" placeholder="X Twitter Username" />
+              </div>
+              <!-- Facebook -->
+              <div class="network">
+                <i class="fa-brands fa-facebook"></i>
+                <input type="text" name="facebook" placeholder="Facebook Username" />
+              </div>
+              <!-- YouTube -->
+              <div class="network">
+                <i class="fa-brands fa-youtube"></i>
+                <input type="text" name="youtube" placeholder="YouTube Username" />
+              </div>
+              <!-- Discord -->
+              <div class="network">
+                <i class="fa-brands fa-discord"></i>
+                <input type="text" name="discord" placeholder="Discord Username" />
+              </div>
+            </div>
+
+            <!-- Widgets Control -->
+            <div class="widget widgets">
+              <h3>Widgets Control</h3>
+              <p>Show/Hide Widgets</p>
+              <ul>
+                <!-- Widget 01 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-01" checked />
+                  <label for="widget-01">Quick Draft</label>
+                </li>
+                <!-- Widget 02 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-02" />
+                  <label for="widget-02">Yearly Targets</label>
+                </li>
+                <!-- Widget 03 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-03" checked />
+                  <label for="widget-03">Tickets Statistics</label>
+                </li>
+                <!-- Widget 04 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-04" checked />
+                  <label for="widget-04">Latest News</label>
+                </li>
+                <!-- Widget 05 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-05" checked />
+                  <label for="widget-05">Latest Tasks</label>
+                </li>
+                <!-- Widget 06 -->
+                <li>
+                  <input type="checkbox" name="widget" id="widget-06" />
+                  <label for="widget-06">Top Search Items</label>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Backup Management -->
+            <div class="widget backups">
+              <h3>Backup Management</h3>
+              <p>Control Backup Time And Type</p>
+              <ul>
+                <!-- Backup 01 -->
+                <li>
+                  <input type="radio" name="backup" id="daily" />
+                  <label for="daily">Daily</label>
+                </li>
+                <!-- Backup 02 -->
+                <li>
+                  <input type="radio" name="backup" id="weekly" checked />
+                  <label for="weekly">Weekly</label>
+                </li>
+                <!-- Backup 03 -->
+                <li>
+                  <input type="radio" name="backup" id="monthly" />
+                  <label for="monthly">Monthly</label>
+                </li>
+              </ul>
+              <div class="servers">
+                <!-- Server 1 -->
+                <input type="radio" name="server" id="full" />
+                <label class="server" for="full">
+                  <i class="fa-solid fa-server"></i>
+                  <span>Full Backup</span>
+                </label>
+                <!-- Server 2 -->
+                <input type="radio" name="server" id="differential" checked />
+                <label class="server" for="differential">
+                  <i class="fa-solid fa-hard-drive"></i>
+                  <span>Differential</span>
+                </label>
+                <!-- Server 3 -->
+                <input type="radio" name="server" id="incremental" />
+                <label class="server" for="incremental">
+                  <i class="fa-solid fa-database"></i>
+                  <span>Incremental</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- <<[Content] -->
+    </div>
+  </body>
+</html>

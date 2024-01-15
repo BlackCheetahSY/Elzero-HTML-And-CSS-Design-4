@@ -1,0 +1,61 @@
+/* [Blue Button]>> */
+.blue-button {
+  border: none;
+  outline: none;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: var(--tiny-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.blue-button:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.blue-button:active {
+  background-color: var(--blue-heavy-color);
+}
+/* <<[Blue Button] */
+
+
+/* [Toggle Checkbox]>> */
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-checkbox + .switch {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #aaa;
+  border: 2px solid;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #aaa;
+  cursor: pointer;
+  transition-property: color, box-shadow;
+  transition-duration: 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Fixing center issue */
+  line-height: 1;
+}
+
+.toggle-checkbox + .switch::before {
+  font-family: FontAwesome;
+  content: "\f00d";
+}
+
+.toggle-checkbox:checked + .switch {
+  color: var(--blue-color);
+  box-shadow: 0 0 5px var(--blue-color);
+}
+
+.toggle-checkbox:checked + .switch::before {
+  content: "\f00c";
+  /* font-weight: 900; */
+}
+/* <<[Toggle Checkbox] */
